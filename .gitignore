@@ -12,6 +12,10 @@ __azurite_db*__.json
 workflow-designtime/local.settings.json
 
 ## Build results
+**/lib/
+**/.debug/
+**/[Dd]ebug/
+**/obj/
 bin/
 obj/
 out/

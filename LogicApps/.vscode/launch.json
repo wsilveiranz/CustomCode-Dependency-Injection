@@ -6,7 +6,8 @@
       "type": "logicapp",
       "request": "launch",
       "funcRuntime": "coreclr",
-      "customCodeRuntime": "coreclr"
+      "customCodeRuntime": "coreclr",
+      "isCodeless": true
     }
   ]
 }

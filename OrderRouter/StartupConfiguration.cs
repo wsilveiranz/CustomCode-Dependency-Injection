@@ -13,7 +13,6 @@ namespace FourthCoffee.Orders
         /// <param name="services">The service collection to configure.</param>
         public void Configure(IServiceCollection services)
         {
-            // Register the routing service with dependency injection
             services.AddSingleton<IRoutingService, OrderRoutingService>();
             services.AddSingleton<IDiscountService, DiscountService>();
         }

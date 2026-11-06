@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
       <!-- Assembly Information -->
@@ -44,7 +44,7 @@
     <None Include="..\README.md" Pack="true" PackagePath="\" Condition="Exists('..\README.md')" />
   </ItemGroup>
   <!-- Target to copy packages to local feed after build -->
-  <Target Name="CopyToLocalNuGetFeed" AfterTargets="Build;Pack">
+  <Target Name="CopyToLocalNuGetFeed" AfterTargets="Pack">
     <ItemGroup>
       <PackageFiles Include="$(OutputPath)../*.nupkg" />
       <SymbolPackageFiles Include="$(OutputPath)../*.snupkg" />
